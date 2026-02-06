@@ -28,7 +28,7 @@ const DisplayTodos = () => {
         <div>
             {allTodos.length > 0 ? (
                 allTodos.slice().reverse().map((todo, index) => {
-                    // compute the correct index in original array
+                    // compute the correct index in original array so we reversed it for display
                     const realIndex = allTodos.length - 1 - index;
 
                     return (
